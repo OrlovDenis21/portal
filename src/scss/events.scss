@@ -1,0 +1,125 @@
+
+
+.events{
+    padding-top: 60px;
+}
+.events__text{
+    font-family: 'OpenSans-SemiBold';
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin-left: 67px;
+    margin-bottom: 19px;
+}
+.events__text-title{
+    font-family: 'OpenSans-SemiBold';
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    position: relative;
+} 
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 380px;
+
+
+background: #CBC9E2;
+border-radius: 20px;
+}
+.slide__text{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.slide__text-title{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.slide__text-subtitle{
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+.buttom{
+    width: 210px;
+    height: 34px;
+    background: #FF5145;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-bottom: 33px;
+}
+.buttom__text{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+}
+.slide__img {
+    margin-right: 42px;
+    margin-top: 31px;
+}
+
+.arrow {
+  
+    
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.arrow__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.arrow__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.slider__dots{
+    margin-left: 12px;
+}
+.slider__dots-item{
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.slider__dots-item:hover {
+    background-color: #000000;
+}

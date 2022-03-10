@@ -1,2 +1,79 @@
 header.header 
-    header.header__text По техническим причинам оплата государственных и муниципальных услух временно приостановлена. Приносим наши извинения
+    .header__text По техническим причинам оплата государственных и муниципальных услух временно приостановлена. Приносим наши извинения!
+    .header__menu
+        .header__title
+            #lines
+            .header__flag 
+                .header__flag-img 
+                    img(src="../img/flag.png", alt="")
+                .header__flag-text
+                    .header__flag-texttitle Портал государственных и муниципальных услуг
+                    .header__flag-textsubtitle Московчкай области
+        .header__subtitle
+            .header__capabilities
+                .header__capabilities-img 
+                    img(src="../img/bell.svg", alt="")
+                .header__capabilities-text Ваши возможности
+                .header__capabilities-texttitle Темы
+            nav.header__citizen
+                ul.citizen__list
+                    li.citizen__item 
+                        a.citizen__link(href="") Гражданам
+                    li.citizen__item 
+                        a.citizen__link(href="") Бизнесу
+            .header__eye 
+                .header__eye-img 
+                    img(src="../img/eye.svg", alt="")
+            .header__enter
+                .header__enter-img 
+                    img(src="../img/enter.svg", alt="")
+                .header__enter-text Войти
+    .submenu
+        .submenu__title 
+            .submenu__subtitle
+                .submenu__img 
+                    img(src="../img/submenu/house1.svg", alt="")
+                .submenu__text Дом и ЖКХ
+            .submenu__subtitle
+                .submenu__img 
+                    img(src="../img/submenu/health2.svg", alt="")
+                .submenu__text Здоровье
+            .submenu__subtitle
+                .submenu__img 
+                    img(src="../img/submenu/building3.svg", alt="")
+                .submenu__text Земля <br/> и стройка
+            .submenu__subtitle
+                .submenu__img 
+                    img(src="../img/submenu/sport4.svg", alt="")
+                .submenu__text Культура <br/> и спорт
+            .submenu__subtitle
+                .submenu__img 
+                    img(src="../img/submenu/documents5.svg", alt="")
+                .submenu__text Личные <br/> документы
+            .submenu__subtitle
+                .submenu__img 
+                    img(src="../img/submenu/education6.svg", alt="")
+                .submenu__text Образование
+            .submenu__subtitle
+                .submenu__img 
+                    img(src="../img/submenu/social7.svg", alt="")
+                .submenu__text Соцподдержка
+            .submenu__subtitle
+                .submenu__img 
+                    img(src="../img/submenu/transport8.svg", alt="")
+                .submenu__text Транспорт
+    .lamp 
+        .lamp__img 
+            img(src="../img/lamp.png", alt="")
+        .lamp__input
+            input(name="m" placeholder="Что вы ищете?" type="search")
+            .lamp__menu 
+                .lamp__menu-title
+                    .lamp__menu-subtitle
+                        .lamp__menu__text Проверить статус заявления
+                    .lamp__titlemenu-subtitle
+                        .lamp__titlemenu__text Записаться в МФЦ
+                    .lamp__titlemenu-subtitle
+                        .lamp__titlemenu__text Записаться к врачу
+                    .lamp__menu-subtitle
+                        .lamp__menu__text Прикрепиться к поликлинике

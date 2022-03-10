@@ -1,10 +1,18 @@
 @import "fonts";
 @import "header";
+@import "events";
 
 *{
 	box-sizing: border-box;
 }
-
+.section__container{
+	background: #E5E5E5;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    
+}
 // * {
 	// outline:none;
 // }
