@@ -1,0 +1,78 @@
+.application{}
+
+.application__title{
+    margin-left: 68px;
+    
+} 
+.application__subtitle{
+    width: 1200px;
+    height: 385px;
+    background: #B9CADD;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.application__img-oval{
+    position: absolute;
+}
+.application__block{} 
+.application__img-logo{
+    padding-top: 43px;
+    padding-left: 40px;
+}
+.application__text{
+    padding-top: 20px;
+    
+}
+.application__texttitle{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.application__textsubtitle{
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+.shop{
+    display: flex;
+}
+.shop__img-qr{
+    margin-right: 23px;
+}
+.shop__block{}
+.shop__title{
+    width: 130px;
+    height: 37px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+}
+.shop__play {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shop__play-img{
+    margin-right: 11px;
+}
+.shop__play-text{
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+}
+
+.shop__mobile-img{
+    margin-right: 63px;
+    margin-top: 17px;
+}
+

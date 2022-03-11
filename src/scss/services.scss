@@ -1,0 +1,267 @@
+.services{
+    margin-bottom: 62px;
+} 
+.services__title{
+    display: flex;
+    align-items: center;
+    margin-left: 52px;
+}
+.services__subtitle{
+    width: 288px;
+    height: 380px;
+    background: #B9CADD;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 16px;
+}
+.services__text{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.services__img{
+    margin-bottom: 56px;
+} 
+.services__button{
+    width: 288px;
+    height: 40px;
+    background: #6986A6;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services__button-text{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    padding: 12px 46px;
+}
+
+
+
+.road__text{}
+.road__text-title{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: left;
+}
+.road__text-subtitle{
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    padding: 0px 20px;
+    text-align: left;
+    margin-bottom: 28px;
+}
+.road__img{
+    margin-bottom: 2px;
+}
+.road__search{
+    padding: 20px;
+    margin-bottom: 0px;
+}
+.road__input{
+    width: 248px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+input[name="s"]{
+    border: none;
+}
+.road__button{
+    width: 288px;
+    height: 40px;
+    background: #6986A6;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.road__button-text{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    padding: 12px 46px;
+}
+.check__text{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: left;
+    margin-bottom: 63px;
+}
+.check__img{
+    margin-bottom: 76px;
+}
+.check__button{
+    width: 288px;
+    height: 40px;
+    background: #6986A6;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check__button-text{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    padding: 12px 46px;
+}
+.school__text{} 
+.school__text-title{
+    font-family: "OpenSans-Bold";
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: left;
+}
+.school__text-subtitle{
+    font-family: "OpenSans-Regular";
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    padding: 0px 20px;
+    text-align: left;
+    // margin-bottom: 119px;
+}
+.services__subtitle{
+    // position: relative;
+}
+.school__block{
+    position: relative;
+}
+.school__img{
+    position: absolute;
+    top: -41px;
+    left: -21px;
+}
+                    
+.school__input{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    width: 248px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 111px;
+}
+                    
+.school__input-title{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    width: 248px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 156px;
+}
+
+.school__password-text{
+    position: absolute;
+    top: 0;
+    margin-top: 202px;
+    font-family: "OpenSans-Regular";
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    padding: 0px 20px;
+} 
+.school__password-text-title{
+    position: absolute;
+    top: 0;
+    margin-top: 230px;
+    font-family: "OpenSans-Regular";
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    padding: 0px 20px;
+}
+                
+.school__button{
+    position: absolute;
+    top: 0;
+    margin-top: 266px;
+    width: 288px;
+    height: 40px;
+    background: #6986A6;
+    border-radius: 22.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.school__button-text{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    padding: 12px 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.services__arrow-left {
+    position: absolute;
+    left: 300px;
+}
+.services__arrow-left-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+.services__arrow-right{
+    position: absolute;
+    right: 284px;
+} 
+.services__arrow-right-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+            
