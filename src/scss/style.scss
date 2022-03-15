@@ -5,17 +5,20 @@
 @import "comprehensive";
 @import "news";
 @import "application";
+@import "technical";
+@import "variables";
+@import "mixin";
 
 *{
 	box-sizing: border-box;
 }
 .section__container{
 	background: #E5E5E5;
+	padding-bottom: 224px;
 }
 .container{
     max-width: 1320px;
-    margin: 0 auto;
-    
+	margin: 0 auto;
 }
 // * {
 	// outline:none;

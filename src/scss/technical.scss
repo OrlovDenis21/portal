@@ -1,0 +1,36 @@
+@import "variables";
+@import "mixin";
+.technical{
+    .technical__title{
+        width: 1200px;
+        height: 133px;
+        background: $color-texttitle;
+        border-radius: 20px;
+        margin-left: 68px;
+        .technical__subtitle{
+            display: flex;
+            justify-content: center;
+            .technical__buttom{
+                @include flexbox;
+                width: 210px;
+                height: 34px;
+                background: $color-texttitle;
+                border: 1px solid $color-button;
+                border-radius: 17px;
+                padding: 9px 64px;
+                margin-top: 25px;
+                .technical__buttom-text{
+                    @include font($name: $OpenSans-Bold, $fontWeight: $boldWeight);
+                    color: $color-button;
+                }
+            }
+        }
+        .technical__tell {
+            display: flex;
+            justify-content: center;
+            @include font($fontWeight: $semiWeight, $fontSize: $xlSize);
+            color: $color-text;
+            margin-top: 23px;
+        }
+    }
+}

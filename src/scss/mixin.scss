@@ -1,0 +1,10 @@
+@mixin font($name: $OpenSans-SemiBold, $fontWeight:$fontWeight, $fontSize: $sSize) {
+    font-family: $name;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+}
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
