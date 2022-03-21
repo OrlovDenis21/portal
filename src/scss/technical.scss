@@ -19,6 +19,7 @@
                 border-radius: 17px;
                 padding: 9px 64px;
                 margin-top: 25px;
+                cursor: pointer;
                 .technical__buttom-text{
                     @include font($name: $OpenSans-Bold, $fontWeight: $boldWeight);
                     color: $color-button;

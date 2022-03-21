@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "OpenSans-Regular";
   src: url("../fonts/OpenSans-Regular.woff") format("woff");
@@ -23,7 +22,7 @@
 }
 
 .header {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .header .header__text {
   text-align: center;
@@ -35,14 +34,16 @@
   margin-bottom: 15px;
 }
 .header .header__menu {
-  margin-left: 40px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 29px;
+  border-bottom: 1px solid #A8A8A8;
+  border-top: 1px solid #A8A8A8;
 }
 .header .header__menu .header__title {
   display: flex;
   align-items: center;
+  margin-left: 40px;
 }
 .header .header__menu .header__title #lines {
   border-bottom: 12px double #FF5145;
@@ -88,21 +89,21 @@
   font-family: "OpenSans-SemiBold", "Arial", "San-serif";
   font-weight: 400;
   font-size: 14px;
-  margin-right: 58px;
+  margin-right: 51px;
   color: rgba(0, 0, 0, 0.6);
 }
 .header .header__menu .header__subtitle .header__capabilities .header__capabilities-texttitle {
   font-family: "OpenSans-SemiBold", "Arial", "San-serif";
   font-weight: 400;
   font-size: 14px;
-  margin-right: 32px;
+  margin-right: 53px;
   border-bottom: 1px dashed #FF5145;
-  /* Параметры линии */
   height: 18px;
-  /* Высота блока */
 }
 .header .header__menu .header__subtitle .header__citizen {
   display: flex;
+  border-left: 1px solid #A8A8A8;
+  border-right: 1px solid #A8A8A8;
 }
 .header .header__menu .header__subtitle .header__citizen .citizen__list {
   list-style-type: none;
@@ -110,7 +111,7 @@
   align-items: center;
 }
 .header .header__menu .header__subtitle .header__citizen .citizen__list .citizen__item {
-  margin-right: 54px;
+  margin-right: 27px;
 }
 .header .header__menu .header__subtitle .header__citizen .citizen__list .citizen__item .citizen__link {
   text-decoration: none;
@@ -129,18 +130,30 @@
   background-color: #FF5145;
   content: "";
   transition: width 0.3s ease-out;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 .header .header__menu .header__subtitle .header__citizen .citizen__list .citizen__item .citizen__link:hover:after,
 .header .header__menu .header__subtitle .header__citizen .citizen__list .citizen__item .citizen__link:focus:after {
   width: 100%;
 }
-.header .header__menu .header__subtitle .header__eye .header__eye-img {
-  margin-right: 57px;
+.header .header__menu .header__subtitle .header__eye-border {
+  border-right: 1px solid #A8A8A8;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header__menu .header__subtitle .header__eye-border .header__eye {
+  text-align: center;
+}
+.header .header__menu .header__subtitle .header__eye-border .header__eye .header__eye-img {
+  margin-right: 26px;
+  margin-left: 24px;
 }
 .header .header__menu .header__subtitle .header__enter {
   display: flex;
   align-items: center;
+  margin-left: 30px;
 }
 .header .header__menu .header__subtitle .header__enter .header__enter-img {
   margin-right: 9px;
@@ -152,15 +165,23 @@
   color: #000000;
   margin-right: 22px;
 }
+.header .submenu {
+  margin-bottom: 40px;
+}
 .header .submenu .submenu__title {
   display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
+  margin-left: 35px;
+  flex-wrap: wrap;
 }
 .header .submenu .submenu__title .submenu__subtitle {
-  margin-left: 86px;
-  margin-bottom: 67px;
+  margin-bottom: 49px;
+  cursor: pointer;
+  margin-left: 43px;
+  cursor: pointer;
+  width: 110px;
+  height: 19px;
+  margin-bottom: 85px;
 }
 .header .submenu .submenu__title .submenu__subtitle .submenu__img {
   margin-bottom: 16px;
@@ -174,6 +195,7 @@
 .header .lamp {
   display: flex;
   justify-content: center;
+  margin-left: 33px;
 }
 .header .lamp .lamp__input {
   margin-left: 12px;
@@ -181,19 +203,18 @@
 .header .lamp .lamp__input input[name=m] {
   font-family: "OpenSans-Regular", "Arial", "San-serif";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   width: 1068px;
   height: 30px;
   color: #6D6D6D;
   border: none;
   border-bottom: 2px solid #D8D8D8;
   padding-top: 10px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 .header .lamp .lamp__menu .lamp__menu-title {
   display: flex;
   align-items: center;
-  margin-left: 20px;
 }
 .header .lamp .lamp__menu .lamp__menu-title .lamp__menu-subtitle {
   display: flex;
@@ -205,6 +226,7 @@
   border-radius: 0px 17px 17px 17px;
   padding: 20px 7px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .header .lamp .lamp__menu .lamp__menu-title .lamp__menu-subtitle .lamp__menu__text {
   font-family: "OpenSans-SemiBold", "Arial", "San-serif";
@@ -222,6 +244,7 @@
   border-radius: 0px 17px 17px 17px;
   padding: 20px 7px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .header .lamp .lamp__menu .lamp__menu-title .lamp__titlemenu-subtitle .lamp__titlemenu__text {
   font-family: "OpenSans-SemiBold", "Arial", "San-serif";
@@ -239,7 +262,7 @@
   font-weight: 400;
   font-size: 20px;
   color: #000000;
-  margin-left: 67px;
+  margin-left: 68px;
   margin-bottom: 19px;
 }
 
@@ -255,19 +278,24 @@
   justify-content: center;
   position: relative;
   margin-bottom: 58px;
+  width: 1340px;
+  height: 380px;
+  overflow: hidden;
 }
 .slider .item {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
-  height: 100%;
+  display: none;
   background: #CBC9E2;
   border-radius: 20px;
   padding-bottom: 30px;
+  width: 1200px;
+  height: 380px;
+  position: absolute;
 }
 .slider .item .slide__text {
   margin-top: 40px;
-  margin-left: 40px;
+  margin-left: 38px;
 }
 .slider .item .slide__text .slide__text-title {
   font-family: "OpenSans-Bold", "Arial", "San-serif";
@@ -281,7 +309,7 @@
   font-weight: 400;
   font-size: 16px;
   color: #fff;
-  margin-bottom: 80px;
+  margin-bottom: 86px;
 }
 .slider .item .slide__text .buttom {
   display: flex;
@@ -291,10 +319,11 @@
   height: 34px;
   background: #FF5145;
   border-radius: 17px;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-bottom: 33px;
+  cursor: pointer;
 }
-.slider .item .slide__text .buttom .buttom__text {
+.slider .item .slide__text .buttom__text {
   font-family: "OpenSans-Bold", "Arial", "San-serif";
   font-weight: 700;
   font-size: 12px;
@@ -303,7 +332,7 @@
 .slider .item .slide__text .slider__dots {
   margin-left: 12px;
 }
-.slider .item .slide__text .slider__dots .slider__dots-item {
+.slider .item .slide__text .slider__dots-item {
   cursor: pointer;
   height: 8px;
   width: 8px;
@@ -313,16 +342,15 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.slider .item .slide__text .slider__dots .active,
-.slider .item .slide__text .slider__dots .slider__dots-item:hover {
+.slider .item .slide__text .active,
+.slider .item .slide__text .slider__dots-item:hover {
   background-color: #000000;
 }
 .slider .item .slide__img {
-  margin-right: 42px;
+  margin-right: 52px;
   margin-top: 31px;
 }
 .slider .arrow {
-  pointer-events: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -340,6 +368,7 @@
   height: 40px;
   background: #fff;
   border-radius: 50%;
+  cursor: pointer;
 }
 .slider .arrow .arrow__right {
   display: flex;
@@ -349,15 +378,22 @@
   height: 40px;
   background: #fff;
   border-radius: 50%;
+  cursor: pointer;
+}
+.slider .show {
+  display: flex;
 }
 
 .services {
-  margin-bottom: 62px;
+  margin-bottom: 42px;
+  position: relative;
+  margin-left: 28px;
 }
 .services .services__title {
   display: flex;
   align-items: center;
-  margin-left: 52px;
+  position: relative;
+  overflow: hidden;
 }
 .services .services__title .services__subtitle {
   width: 288px;
@@ -365,7 +401,10 @@
   background: #B9CADD;
   border-radius: 20px;
   text-align: center;
-  margin-left: 16px;
+  margin-left: 29px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  flex: 0 0 auto;
 }
 .services .services__title .services__subtitle .services__text {
   font-family: "OpenSans-Bold", "Arial", "San-serif";
@@ -387,6 +426,7 @@
   height: 40px;
   background: #6986A6;
   border-radius: 22.5px;
+  cursor: pointer;
 }
 .services .services__title .services__subtitle .services__button .services__button-text {
   font-family: "OpenSans-Bold", "Arial", "San-serif";
@@ -439,6 +479,7 @@
   height: 40px;
   background: #6986A6;
   border-radius: 22.5px;
+  cursor: pointer;
 }
 .services .services__title .services__subtitle .road__button-text {
   font-family: "OpenSans-Bold", "Arial", "San-serif";
@@ -467,6 +508,7 @@
   height: 40px;
   background: #6986A6;
   border-radius: 22.5px;
+  cursor: pointer;
 }
 .services .services__title .services__subtitle .check__button-text {
   font-family: "OpenSans-Bold", "Arial", "San-serif";
@@ -553,6 +595,7 @@
   height: 40px;
   background: #6986A6;
   border-radius: 22.5px;
+  cursor: pointer;
 }
 .services .services__title .services__subtitle .school__block .school__button .school__button-text {
   font-family: "OpenSans-Bold", "Arial", "San-serif";
@@ -562,11 +605,17 @@
   padding: 12px 46px;
 }
 
-.services__arrow-left {
+.arrow__services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
-  left: 300px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
-.services__arrow-left .services__arrow-left-img {
+.arrow__services .services__arrow-left {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -574,13 +623,10 @@
   height: 40px;
   background: #fff;
   border-radius: 50%;
+  cursor: pointer;
+  transform: translateX(-20px);
 }
-
-.services__arrow-right {
-  position: absolute;
-  right: 284px;
-}
-.services__arrow-right .services__arrow-right-img {
+.arrow__services .services__arrow-right {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -588,30 +634,46 @@
   height: 40px;
   background: #fff;
   border-radius: 50%;
+  cursor: pointer;
+  transform: translateX(20px);
 }
 
 .comprehensive {
-  margin-bottom: 60px;
+  margin-bottom: 51px;
+  position: relative;
+  margin-left: 28px;
 }
 .comprehensive .comprehensive__title {
   display: flex;
   align-items: center;
-  margin-left: 52px;
+  position: relative;
+  overflow: hidden;
 }
 .comprehensive .comprehensive__title .comprehensive__subtitle {
   width: 288px;
   height: 380px;
   background: #877DF2;
   border-radius: 20px;
-  margin-left: 16px;
+  margin-left: 28px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  flex: 0 0 auto;
 }
-.comprehensive .comprehensive__title .comprehensive__subtitle:nth-child(2) {
+.comprehensive .comprehensive__title .comprehensive__card-fon {
+  width: 288px;
+  height: 380px;
+  border-radius: 20px;
+}
+.comprehensive .comprehensive__title .comprehensive-purple .comprehensive__card-fon {
+  background-color: #877DF2;
+}
+.comprehensive .comprehensive__title .comprehensive-blue .comprehensive__card-fon {
   background-color: #81B9F2;
 }
-.comprehensive .comprehensive__title .comprehensive__subtitle:nth-child(3) {
+.comprehensive .comprehensive__title .comprehensiv-carrot .comprehensive__card-fon {
   background-color: #DB826C;
 }
-.comprehensive .comprehensive__title .comprehensive__subtitle:nth-child(4) {
+.comprehensive .comprehensive__title .comprehensive-lilac .comprehensive__card-fon {
   background-color: #EAC267;
 }
 .comprehensive .comprehensive__title .comprehensive__text {
@@ -624,11 +686,11 @@
   margin-bottom: 40px;
 }
 .comprehensive .comprehensive__title .comprehensive__img {
-  padding: 0px 6px;
+  padding: 1px 18px;
 }
 
 .news {
-  margin-bottom: 58px;
+  margin-bottom: 52px;
 }
 .news .all__news {
   text-align: right;
@@ -644,7 +706,10 @@
 }
 .news .news__title {
   display: flex;
-  margin-left: 52px;
+  margin-left: 0px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
 }
 .news .news__title .news__subtitle {
   width: 288px;
@@ -653,6 +718,7 @@
   border-radius: 20px;
   margin-left: 16px;
   padding-bottom: 39px;
+  margin-bottom: 10px;
 }
 .news .news__title .news__subtitle .news__text .news__text-title {
   font-family: "OpenSans-Regular", "Arial", "San-serif";
@@ -764,6 +830,7 @@
   border-radius: 17px;
   padding: 9px 64px;
   margin-top: 25px;
+  cursor: pointer;
 }
 .technical .technical__title .technical__subtitle .technical__buttom .technical__buttom-text {
   font-family: "OpenSans-Bold", "Arial", "San-serif";
@@ -786,7 +853,7 @@
 }
 
 .section__container {
-  background: #E5E5E5;
+  background: #F5F5F5;
   padding-bottom: 224px;
 }
 

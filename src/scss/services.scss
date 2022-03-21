@@ -1,18 +1,24 @@
 @import "variables";
 @import "mixin";
 .services{
-    margin-bottom: 62px;
+    margin-bottom: 42px;
+    position: relative;
+    margin-left: 28px;
     .services__title{
         display: flex;
         align-items: center;
-        margin-left: 52px;
+        position: relative;
+        overflow: hidden;
         .services__subtitle{
             width: 288px;
             height: 380px;
             background: #B9CADD;
             border-radius: 20px;
             text-align: center;
-            margin-left: 16px;
+            margin-left: 29px;
+            margin-right: 0;
+            margin-bottom: 20px;
+            flex: 0 0 auto;
             .services__text{
                 @include font($name: $OpenSans-Bold, $fontWeight: $boldWeight, $fontSize: $mSize);
                 color: $color-texttitle;
@@ -29,6 +35,7 @@
                 height: 40px;
                 background: #6986A6;
                 border-radius: 22.5px;
+                cursor: pointer;
                 .services__button-text{
                     @include font($name: $OpenSans-Bold, $fontWeight: $boldWeight);
                     color: $color-texttitle;
@@ -73,6 +80,7 @@
                 height: 40px;
                 background: #6986A6;
                 border-radius: 22.5px;
+                cursor: pointer;
             } 
             .road__button-text{
                 @include font($name: $OpenSans-Bold, $fontWeight: $boldWeight);
@@ -95,6 +103,7 @@
                 height: 40px;
                 background: #6986A6;
                 border-radius: 22.5px;
+                cursor: pointer;
             }
             .check__button-text{
                 @include font($name: $OpenSans-Bold, $fontWeight: $boldWeight);
@@ -119,9 +128,6 @@
             .school__block{
                 position: relative;
                 .school__img{
-                    // position: absolute;
-                    // top: -41px;
-                    // left: -21px;
                 }
                 .school__input{
                     @include flexbox;
@@ -172,6 +178,7 @@
                     height: 40px;
                     background: #6986A6;
                     border-radius: 22.5px;
+                    cursor: pointer;
                     .school__button-text{
                         @include font($name: $OpenSans-Bold, $fontWeight: $boldWeight);
                         color: $color-texttitle;
@@ -182,31 +189,32 @@
         }
     }
 }
-.services__arrow-left {
+
+.arrow__services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
-    left: 300px;
-    // margin-left: 300px;
-    .services__arrow-left-img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .services__arrow-left {
+        @include flexbox;
         width: 40px;
         height: 40px;
         background: $color-texttitle;
         border-radius: 50%;
+        cursor: pointer;
+        transform: translateX(-20px);
     }
-}
-.services__arrow-right{
-    position: absolute;
-    right: 284px;
-    // margin-left: 284px;
-    .services__arrow-right-img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .services__arrow-right{
+        @include flexbox;
         width: 40px;
         height: 40px;
         background: $color-texttitle;
         border-radius: 50%;
+        cursor: pointer;
+        transform: translateX(20px);
     }
 }

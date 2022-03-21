@@ -7,12 +7,11 @@
 .events__text{
     @include font($fontSize: $xlSize);
     color: $color-text;
-    margin-left: 67px;
+    margin-left: 68px;
     margin-bottom: 19px;
 }
 .events__text-title{
     @include font($fontSize: $xlSize);
-
     color: $color-text;
 }
 .slider{
@@ -20,18 +19,23 @@
     justify-content: center;
     position: relative;
     margin-bottom: 58px;
+    width: 1340px;
+    height: 380px;
+    overflow: hidden;
     .item{
         display: flex;
         justify-content: space-between;
-        width: 1200px;
-        // height: 380px;
-        height: 100%;
+        display: none;
         background: #CBC9E2;
         border-radius: 20px;
         padding-bottom: 30px;
+        width: 1200px;
+        height: 380px;
+        position: absolute;
         .slide__text{
             margin-top: 40px;
-            margin-left: 40px;
+            margin-left: 38px;
+        
             .slide__text-title{
                 @include font($name: $OpenSans-Bold, $fontWeight: $boldWeight, $fontSize: $xxlSize);
                 color: $color-texttitle;
@@ -40,7 +44,7 @@
             .slide__text-subtitle{
                 @include font($name: $OpenSans-Regular, $fontWeight: $fontWeight, $fontSize: $lSize);
                 color: $color-texttitle;
-                margin-bottom: 80px;
+                margin-bottom: 86px;
             }
             .buttom{
                 @include flexbox;
@@ -48,39 +52,38 @@
                 height: 34px;
                 background: $color-button;
                 border-radius: 17px;
-                margin-left: 10px;
+                margin-left: 0px;
                 margin-bottom: 33px;
-            
-                .buttom__text{
-                    @include font($name: $OpenSans-Bold, $fontWeight:$boldWeight, $fontSize: $sSize);
-                    color: $color-texttitle;
-                }
+                cursor: pointer;
+            }
+            .buttom__text{
+                @include font($name: $OpenSans-Bold, $fontWeight:$boldWeight, $fontSize: $sSize);
+                color: $color-texttitle;
             }
             .slider__dots{
                 margin-left: 12px;
-                .slider__dots-item{
-                    cursor: pointer;
-                    height: 8px;
-                    width: 8px;
-                    margin: 0 2px;
-                    background-color: $color-texttitle;
-                    border-radius: 50%;
-                    display: inline-block;
-                    transition: background-color 0.6s ease;
-                }
-                .active,
-                .slider__dots-item:hover {
-                    background-color: $color-text;
-                }
+            }            
+            .slider__dots-item{
+                cursor: pointer;
+                height: 8px;
+                width: 8px;
+                margin: 0 2px;
+                background-color: $color-texttitle;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .active,
+            .slider__dots-item:hover {
+                background-color: $color-text;
             }
         }
         .slide__img {
-            margin-right: 42px;
-            margin-top: 31px;
+        margin-right: 52px;
+        margin-top: 31px;
         }
     }
     .arrow {
-        pointer-events: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -95,14 +98,18 @@
             height: 40px;
             background: $color-texttitle;
             border-radius: 50%;
+            cursor: pointer;
         }
-
         .arrow__right {
             @include flexbox;
             width: 40px;
             height: 40px;
             background: $color-texttitle;
             border-radius: 50%;
+            cursor: pointer;
         }
+    }
+    .show {
+        display: flex;
     }
 }
